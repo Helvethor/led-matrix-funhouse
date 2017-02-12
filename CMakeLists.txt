@@ -14,5 +14,12 @@ set(text-scroller_SRCS
 	src/text-scroller.cpp
 )
 
+set(fill_SRCS
+	src/fill.cpp
+)
+
 add_executable(text-scroller ${text-scroller_SRCS})
-target_link_libraries(text-scroller rgbmatrix boost_system boost_filesystem boost_log pthread opt)
+target_link_libraries(text-scroller rgbmatrix boost_system boost_filesystem boost_log pthread)
+
+add_executable(fill ${fill_SRCS})
+target_link_libraries(fill rgbmatrix boost_log pthread)
