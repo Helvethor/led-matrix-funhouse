@@ -1,3 +1,0 @@
-[submodule "rgbmatrix"]
-	path = rgbmatrix
-	url = https://github.com/adafruit/rpi-rgb-led-matrix

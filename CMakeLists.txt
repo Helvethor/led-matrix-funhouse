@@ -7,9 +7,6 @@ endif()
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
-include_directories(rgbmatrix/include)
-link_directories(rgbmatrix/lib)
-
 set(text-scroller_SRCS
 	src/text-scroller.cpp
 )
