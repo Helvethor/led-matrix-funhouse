@@ -19,7 +19,7 @@ namespace bm = boost::math;
 
 
 
-char* font_file = "rgbmatrix/fonts/10x20.bdf";
+char* font_file = "/usr/share/fonts/misc/unifont.bdf";
 int chains = 2;
 int rows = 32;
 int delay = 50;

@@ -7,16 +7,11 @@ endif()
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
-set(text-scroller_SRCS
-	src/text-scroller.cpp
-)
-
-set(fill_SRCS
-	src/fill.cpp
-)
-
-add_executable(text-scroller ${text-scroller_SRCS})
+add_executable(text-scroller src/text-scroller.cpp)
 target_link_libraries(text-scroller rgbmatrix boost_system boost_filesystem boost_log pthread)
 
-add_executable(fill ${fill_SRCS})
+add_executable(fill src/fill.cpp)
 target_link_libraries(fill rgbmatrix boost_log pthread)
+
+add_executable(snake src/snake.cpp)
+target_link_libraries(snake rgbmatrix boost_log pthread)
